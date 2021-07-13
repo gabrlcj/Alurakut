@@ -1,19 +1,19 @@
 import styled from 'styled-components';
 
 const Box = styled.div`
-  background-image: radial-gradient( circle 592px at 48.2% 50%,  rgba(255,255,249,.8) 0%, rgba(160,199,254,1) 74.6% );
+  background-image: radial-gradient( circle 592px at 48.2% 50%,  rgba(255,255,249,.7) 0%, rgba(160,199,254,1) 74.6% );
   border-radius: 8px;
   padding: 16px;
   margin-bottom: 10px;
   overflow-y: auto;
-  box-shadow: .5px 1px 3px #121212;
+  box-shadow: 3px 3px 6px 1px #121212;
 
-  /* CSS Pré-Pronto */
+  /* CSS Pré-Pronto */ 
   .boxLink {
     font-size: 14px;
-    color: #2E7BB4;
+    color: #121212;
     text-decoration: none;
-    font-weight: 800;
+    font-weight: 700;
   }
   .title {
     font-size: 32px;
@@ -58,7 +58,25 @@ const Box = styled.div`
     color: #FFFFFF;
     border-radius: 10000px;
     background-color: #6F92BB;
+  }          
+  .btn-grad {
+    background-image: linear-gradient(to right, #457fca 0%, #5691c8  51%, #457fca  100%);
+    margin: 10px 0 10px 0;
+    padding: 15px 25px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: #fff;          
+    box-shadow: 0 0 20px #eee;
+    border-radius: 50px;
+    display: block;
   }
+  .btn-grad:hover {
+    background-position: right center;
+    color: #ffffff;
+    text-decoration: none;
+  }             
 `; 
 
 export default Box

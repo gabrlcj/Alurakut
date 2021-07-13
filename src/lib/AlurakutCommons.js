@@ -19,7 +19,7 @@ function Link({ href, children, ...props }) {
 // ================================================================================================================
 // Menu
 // ================================================================================================================
-export function AlurakutMenu({ githubUser }) {
+export function AlurakutMenu({ userName }) {
   const [isMenuOpen, setMenuState] = React.useState(false);
   return (
     <AlurakutMenu.Wrapper isMenuOpen={isMenuOpen}>
@@ -48,14 +48,14 @@ export function AlurakutMenu({ githubUser }) {
           {!isMenuOpen && <img src={`${BASE_URL}/icons/menu-closed.svg?v=${v}`} />}
         </button>
       </div>
-      <AlurakutMenuProfileSidebar githubUser={githubUser} />
+      <AlurakutMenuProfileSidebar githubUser={userName} />
     </AlurakutMenu.Wrapper>
   )
 }
 AlurakutMenu.Wrapper = styled.header`
   width: 100%;
   background: #121212;
-  box-shadow: 0px 0px 6px #121212;
+  box-shadow: 3px 3px 6px 1px #121212;
   .alurakutMenuProfileSidebar {
     background-image: radial-gradient( circle 592px at 48.2% 50%,  rgba(255,255,249,.9) 0%, rgba(160,199,254,1) 74.6% );
     font-family: sans-serif;
@@ -95,6 +95,7 @@ AlurakutMenu.Wrapper = styled.header`
     }
   }
   .container {
+    box-shadow: 3px 3px 6px 1px #121212;
     background: #121212;
     padding: 7px 16px;
     max-width: 1110px;
@@ -163,18 +164,17 @@ AlurakutMenu.Logo = styled.img`
   padding: 9px 14px;
   border-radius: 1000px;
   height: 34px;
-  box-shadow: 2px 2px 10px #121212;
 `;
 
-function AlurakutMenuProfileSidebar({ githubUser }) {
+function AlurakutMenuProfileSidebar() {
   return (
     <div className="alurakutMenuProfileSidebar">
       <div>
-        <img src={`https://github.com/${githubUser}.png`} style={{ borderRadius: '8px' }} />
+        <img src={`https://github.com/gabrlcj.png`} style={{ borderRadius: '8px' }} />
         <hr />
         <p>
-          <a className="boxLink" href={`/user/${githubUser}`}>
-            @{githubUser}
+          <a className="boxLink" href={`https://github.com/gabrlcj`}>
+            @gabrlcj
           </a>
         </p>
         <hr />
