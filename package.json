@@ -1,6 +1,8 @@
 {
-  "name": "with-styled-components",
+  "name": "alurakut",
   "version": "1.0.0",
+  "description": "Aplicação feita em next.js e react.js, recriando a rede social Orkut.",
+  "author": "Gabriel Bittencourt",
   "scripts": {
     "dev": "next",
     "build": "next build",
