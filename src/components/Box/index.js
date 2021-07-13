@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 
 const Box = styled.div`
-  background: #FFFFFF;
+  background-image: radial-gradient( circle 592px at 48.2% 50%,  rgba(255,255,249,.8) 0%, rgba(160,199,254,1) 74.6% );
   border-radius: 8px;
   padding: 16px;
   margin-bottom: 10px;
   overflow-y: auto;
+  box-shadow: .5px 1px 3px #121212;
 
   /* CSS Pré-Pronto */
   .boxLink {
@@ -18,6 +19,7 @@ const Box = styled.div`
     font-size: 32px;
     font-weight: 400;
     margin-bottom: 20px;
+    color: #121212;
   }
   .subTitle {
     font-size: 18px;
@@ -28,7 +30,7 @@ const Box = styled.div`
     margin-bottom: 20px;
     font-size: 16px;
     font-weight: 700;
-    color: #333333;
+    color: #121212;
     margin-bottom: 20px;
   }
   hr {

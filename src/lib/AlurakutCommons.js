@@ -27,7 +27,7 @@ export function AlurakutMenu({ githubUser }) {
         <AlurakutMenu.Logo src={`${BASE_URL}/logo.svg`} />
 
         <nav style={{ flex: 1 }}>
-          {[{ name: 'Inicio', slug: '/'}, {name: 'Amigos', slug: '/amigos'}, {name: 'Comunidades', slug: '/comunidades'}].map((menuItem) => (
+          {[{ name: 'Inicio', slug: '/'}, { name: 'Perfil', slug: '/perfil'} , {name: 'Amigos', slug: '/amigos'}, {name: 'Comunidades', slug: '/comunidades'}].map((menuItem) => (
             <Link key={`key__${menuItem.name.toLocaleLowerCase()}`} href={`${menuItem.slug.toLocaleLowerCase()}`}>
               {menuItem.name}
             </Link>
@@ -54,9 +54,11 @@ export function AlurakutMenu({ githubUser }) {
 }
 AlurakutMenu.Wrapper = styled.header`
   width: 100%;
-  background-color: #308BC5;
+  background: #121212;
+  box-shadow: 0px 0px 6px #121212;
   .alurakutMenuProfileSidebar {
-    background: white;
+    background-image: radial-gradient( circle 592px at 48.2% 50%,  rgba(255,255,249,.9) 0%, rgba(160,199,254,1) 74.6% );
+    font-family: sans-serif;
     position: fixed;
     z-index: 100;
     padding: 46px;
@@ -80,7 +82,7 @@ AlurakutMenu.Wrapper = styled.header`
     }
     .boxLink {
       font-size: 18px;
-      color: #2E7BB4;
+      color: #121212;
       -webkit-text-decoration: none;
       text-decoration: none;
       font-weight: 800;
@@ -89,11 +91,11 @@ AlurakutMenu.Wrapper = styled.header`
       margin-top: 12px;
       margin-bottom: 8px;
       border-color: transparent;
-      border-bottom-color: #ECF2FA;
+      border-bottom-color: #121212;
     }
   }
   .container {
-    background-color: #308BC5;
+    background: #121212;
     padding: 7px 16px;
     max-width: 1110px;
     margin: auto;
@@ -120,13 +122,14 @@ AlurakutMenu.Wrapper = styled.header`
       }
       a {
         font-size: 12px;
-        color: white;
+        color: #ffffff;
         padding: 10px 16px;
         position: relative;
         text-decoration: none;
+        margin-left: 10px;
         &:after {
-          content: " ";
-          background-color: #5292C1;
+          content: " • ";
+          background: #121212;
           display: block;
           position: absolute;
           width: 1px;
@@ -140,7 +143,7 @@ AlurakutMenu.Wrapper = styled.header`
     }
     input {
       color: #ffffff;
-      background: #5579A1;
+      background: #121212;
       padding: 10px 42px;
       border: 0;
       background-image: url(${`${BASE_URL}/icons/search.svg`});
@@ -156,10 +159,11 @@ AlurakutMenu.Wrapper = styled.header`
   }
 `;
 AlurakutMenu.Logo = styled.img`
-  background-color: #ffffff;
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(222,168,248,1) 0%, rgba(168,222,248,1) 21.8%, rgba(189,250,205,1) 35.6%, rgba(243,250,189,1) 52.9%, rgba(250,227,189,1) 66.8%, rgba(248,172,172,1) 90%, rgba(254,211,252,1) 99.7% );
   padding: 9px 14px;
   border-radius: 1000px;
   height: 34px;
+  box-shadow: 2px 2px 10px #121212;
 `;
 
 function AlurakutMenuProfileSidebar({ githubUser }) {
@@ -222,7 +226,7 @@ export function AlurakutProfileSidebarMenuDefault() {
 AlurakutProfileSidebarMenuDefault.Wrapper = styled.div`
   a {
     font-size: 12px;
-    color: #2E7BB4;
+    color: #121212;
     margin-bottom: 16px;
     display: flex;
     align-items: center;
@@ -290,7 +294,7 @@ OrkutNostalgicIconSet.List = styled.ul`
   flex-wrap: wrap;
   li {
     font-size: 12px;
-    color: #5A5A5A;
+    color: #121212;
     display: grid;
     grid-template-areas:
       "title title"
