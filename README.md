@@ -1,10 +1,13 @@
 <div align="center">
   <img src=".github/img/Alurakut.png" />
+
+  [![gabrlcj - Alurakut](https://img.shields.io/static/v1?label=Build-by-gabrlcj&message=Alurakut&color=pink&logo=github)](https://github.com/gabrlcj/Alurakut)
+  [![stars - Alurakut](https://img.shields.io/github/stars/gabrlcj/Alurakut?style=social)](https://github.com/gabrlcj/Alurakut)
 </div>
 
 ---
 
-<h5 align="center">Aplicação com foco em recriar o Orkut.</h5>
+<h3 align="center">Aplicação com foco em recriar o Orkut.</h3>
 <div align="center">
   <b>
     <a href="#sobre">Sobre</a> |
@@ -23,7 +26,7 @@
 
 
 # Sobre
-**Nesta imersão da [Alura](https://github.com/alura-challenges) nós revivemos o nossa querida rede social Orkut, ou quase isso hahaha, com algumas mudanças utilizamos das novas tecnologias para recriar a interface dele.**
+**Nesta imersão da [Alura](https://github.com/alura-challenges) nós revivemos a nossa querida rede social Orkut, ou quase isso hahaha, com algumas mudanças e implementações, cada um deixou a rede com a sua cara, assim utilizamos das novas tecnologias para recriar a interface dele.**
 
 **Dentro de 5 dias com utilização de React.js e Next.js nosso objetivo é transformar ela em uma aplicação focada em *SPA* ou *Single Page Application*.**
 
