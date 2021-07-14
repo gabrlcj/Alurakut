@@ -56,4 +56,16 @@ export const ProfileRelationsBoxWrapper = styled(Box)`
       background-image: linear-gradient(0deg,#00000073,transparent);
     }
   }
-`; 
+  b {
+    color: #1e88e5;
+    text-decoration: underline;
+  }
+`
+
+export function Title(props) {
+  return (
+    <h2 className="smallTitle">
+      {props.title} <b>({props.items.length})</b>
+    </h2>
+  )
+}

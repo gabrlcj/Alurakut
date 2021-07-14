@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 
 import GitHubService from '../src/services/api'
 
@@ -8,7 +8,8 @@ import FriendsList from '../src/components/FriendsList'
 import MainGrid from '../src/components/MainGrid'
 import Box from '../src/components/Box'
 import ProfileSideBar from '../src/components/ProfileSideBar'
-import { ProfileRelationsBoxWrapper } from '../src/components/ProfileRelations'
+import { Title, ProfileRelationsBoxWrapper } from '../src/components/ProfileRelations'
+import { InspirationBox } from '../src/components/InspirationBox'
 
 
 export default function Home() {
@@ -23,26 +24,38 @@ export default function Home() {
       id: '1213123141514345',
       title: 'Eu odeio acordade cedo',
       image: 'https://alurakut.vercel.app/capa-comunidade-01.jpg',
-      link: '#'
-      },
-      {
-        id: '0912803912830918',
-        title: 'Alura Stars',
-        image: 'https://www.alura.com.br/assets/img/stars/logoIlustra.1622650220.svg',
-        link: 'https://www.alura.com.br/stars'
-      },
-      {
-        id: '123984673902314',
-        title: 'NBA',
-        image: 'https://a4.espncdn.com/combiner/i?img=%2Fi%2Fespn%2Fmisc_logos%2F500%2Fnba.png',
-        link: 'https://www.nba.com/'
-      },
-      {
-        id: '1231415757587689879',
-        title: 'Pérolas da NBA',
-        image: 'https://pbs.twimg.com/profile_images/1351954925086007301/6HKat4eQ_400x400.jpg',
-        link: '#'
-      }
+      link: 'https://www.orkut.br.com/MainCommunity?cmm=10000'
+    },
+    {
+      id: '0912803912830918',
+      title: 'Alura Stars',
+      image: 'https://www.alura.com.br/assets/img/stars/logoIlustra.1622650220.svg',
+      link: 'https://www.alura.com.br/stars'
+    },
+    {
+      id: '123984673902314',
+      title: 'NBA',
+      image: 'https://a4.espncdn.com/combiner/i?img=%2Fi%2Fespn%2Fmisc_logos%2F500%2Fnba.png',
+      link: 'https://www.nba.com/'
+    },
+    {
+      id: '1231415757587689879',
+      title: 'Pérolas da NBA',
+      image: 'https://pbs.twimg.com/profile_images/1351954925086007301/6HKat4eQ_400x400.jpg',
+      link: 'https://twitter.com/PerolasdaNBA'
+    },
+    {
+      id: '12398467390456535',
+      title: 'DEV Community',
+      image: 'https://thepracticaldev.s3.amazonaws.com/i/6hqmcjaxbgbon8ydw93z.png',
+      link: 'https://dev.to/'
+    },
+    {
+      id: '12392342353902314',
+      title: 'JuiceWRLD',
+      image: 'https://yt3.ggpht.com/ytc/AKedOLRZ-uACtA-fJfstOtbfwqpFCELcE9f9JShyo5Y_hA=s88-c-k-c0x00ffffff-no-rj',
+      link: 'https://www.youtube.com/channel/UC0BletW9phE4xHFM44q4qKA'
+    }
   ])
 
   const handleCreateCommunity = (e) => {
@@ -73,7 +86,7 @@ export default function Home() {
             <h1 className="title">
               Bem-vindo(a), {username.login}
             </h1>
-            <OrkutNostalgicIconSet />
+            <OrkutNostalgicIconSet videos="3" mensagens="999" sexy="1" confiavel="2" />
           </Box>
           <Box>
             <h2 className="subTitle">
@@ -81,7 +94,7 @@ export default function Home() {
             </h2>
             <form onSubmit={handleCreateCommunity}>
               <div>
-                <i>Nome comunidade:</i>
+                <i>Nome da comunidade:</i>
                 <input 
                   placeholder="Qual vai ser o nome da sua comunidade?" 
                   name="title" 
@@ -125,9 +138,7 @@ export default function Home() {
             <FriendsList />
           </ProfileRelationsBoxWrapper>      
           <ProfileRelationsBoxWrapper>
-          <h2 className="smallTitle">
-            Comunidades ({community.length})
-          </h2>
+          <Title title="Comunidades" items={community} />
           <ul>
             {community.map((item) => {
               return (
@@ -141,11 +152,9 @@ export default function Home() {
             })}
           </ul>
           </ProfileRelationsBoxWrapper>      
-          <Box>
-            <h2 className="smallTitle">
-              Inspirações na Programação
-            </h2>
-          </Box>   
+          <ProfileRelationsBoxWrapper>
+            <InspirationBox />
+          </ProfileRelationsBoxWrapper>
         </div>
       </MainGrid>
     </>

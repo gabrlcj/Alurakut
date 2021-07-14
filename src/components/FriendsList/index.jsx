@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 import GitHubService from "../../services/api"
 import FriendsImage from "../FriendsImage"
+import { Title } from "../ProfileRelations"
 
 export default function FriendsList({ amount, random }) {
   const [friends, setFriends] = useState([])
@@ -12,9 +13,7 @@ export default function FriendsList({ amount, random }) {
 
   return (
     <>
-      <h2 className="smallTitle">
-        Amigos(as) ({friends.length})
-      </h2>
+      <Title title="Amigos(as)" items={friends} />
       <ul>
         {friends.map((friends) => {
           return (

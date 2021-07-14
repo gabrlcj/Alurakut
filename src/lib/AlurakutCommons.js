@@ -39,7 +39,7 @@ export function AlurakutMenu({ userName }) {
             Sair
           </a>
           <div>
-            <input placeholder="Pesquisar no Orkut" />
+            <input placeholder="Pesquisar no Alurakut" />
           </div>
         </nav>
 
@@ -54,7 +54,7 @@ export function AlurakutMenu({ userName }) {
 }
 AlurakutMenu.Wrapper = styled.header`
   width: 100%;
-  background: #121212;
+  background: #12121299;
   box-shadow: 3px 3px 6px 1px #121212;
   .alurakutMenuProfileSidebar {
     background-image: radial-gradient( circle 592px at 48.2% 50%,  rgba(255,255,249,.9) 0%, rgba(160,199,254,1) 74.6% );
@@ -95,8 +95,7 @@ AlurakutMenu.Wrapper = styled.header`
     }
   }
   .container {
-    box-shadow: 3px 3px 6px 1px #121212;
-    background: #121212;
+    background: #12121210;
     padding: 7px 16px;
     max-width: 1110px;
     margin: auto;
@@ -161,7 +160,7 @@ AlurakutMenu.Wrapper = styled.header`
   }
 `;
 AlurakutMenu.Logo = styled.img`
-  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(222,168,248,1) 0%, rgba(168,222,248,1) 21.8%, rgba(189,250,205,1) 35.6%, rgba(243,250,189,1) 52.9%, rgba(250,227,189,1) 66.8%, rgba(248,172,172,1) 90%, rgba(254,211,252,1) 99.7% );
+  background: #C1D5DC;
   padding: 9px 14px;
   border-radius: 1000px;
   height: 34px;
@@ -278,7 +277,7 @@ export function OrkutNostalgicIconSet(props) {
             <span className="OrkutNostalgicIconSet__iconComplex" className="OrkutNostalgicIconSet__number" style={{ gridArea: 'number' }}>
               {[0, 1, 2].map((_, index) => {
                 const isHeartActive = index <= (total - 1);
-                return <img key={`orkut__icon_set__${slug}_img_${index}`} src={`https://alurakut.vercel.app/icons/${icon}.svg`} style={{ marginRight: '2px', opacity: isHeartActive ? 1 : '0.5' }} />
+                return <img key={`orkut__icon_set__${slug}_img_${index}`} src={`https://alurakut.vercel.app/icons/${icon}.svg`} style={{ marginRight: '2px', opacity: isHeartActive ? 2 : '0.5' }} />
               })}
             </span>
           </li>
