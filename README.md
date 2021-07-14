@@ -13,7 +13,7 @@
 
 ---
 
-<h3 align="center">Aplicação com foco em recriar rede social, Orkut, durante a imersão React.</h3>
+<h3 align="center">Aplicação com foco em recriar uma das rede social mais nostalgica que tivemos no passado.</h3>
 <div align="center">
   <b>
     <a href="#sobre">Sobre</a> |
