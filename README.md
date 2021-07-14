@@ -2,10 +2,7 @@
   <img src=".github/img/Alurakut.png" />
   <br>
   <h4>Projeto realizado na imersão React da <a href="https://www.alura.com.br/" target="_blank">Alura</a>.</h4>
-  <h2><a href="https://alurakut-gabrlcj.vercel.app/" target="_blank">Site da aplicação</a></h2>
 </div>
-
-
 
 <div align="center">
   <b>
@@ -17,10 +14,11 @@
   </b>
 </div>
 
+<br><br>
+
 <div align="center">
   <img src=".github/img/Imersao-react.png" width="125" />
 </div>
-
 
 
 ## Sobre
@@ -28,7 +26,6 @@
 
 **Dentro de 5 dias com utilização de React.js e Next.js nosso objetivo é transformar ela em uma aplicação focada em *SPA* ou *Single Page Application*.**
 
-<br>
 
 ## Imagens
 
@@ -38,7 +35,6 @@
   <h5>Menu mobile da Home:</h5>
   <img src=".github/img/mobile-home.png" />
 </div>
-
 
 
 ## Tecnologias
@@ -65,16 +61,11 @@
 
 <div align="center">
   <img src="https://unavatar.now.sh/github/omariosouto" width="275" />
-
-  - [MarioSouto](https://github.com/omariosouto)
-
+  <a href="https://github.com/omariosouto">Mario Souto</a>
   <img src="https://unavatar.now.sh/github/peas" width="275" />
-
-  - [PauloSilveira](https://github.com/peas)
-
+  <a href="https://github.com/peas">Paulo Silveira</a>
   <img src="https://unavatar.now.sh/github/juunegreiros" width="275" />
-
-  - [JulianaNegreiros](https://github.com/juunegreiros)
+  <a href="https://github.com/juunegreiros">Juliana Negreiros</a>
 </div>
 
 ## Autor
