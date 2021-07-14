@@ -98,7 +98,6 @@ export default function Home() {
                   aria-label="URL para usar de capa"
                   type="url"
                 />
-                <hr />
                 <input
                   name="image"
                   aria-label="Selecione uma imagem para importar"

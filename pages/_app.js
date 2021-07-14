@@ -11,6 +11,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     background-image: url('https://images.hdqwalls.com/wallpapers/demon-slayer-minimal-4k-zh.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
     font-family: sans-serif;
   }
 
@@ -28,7 +29,11 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .inputURL {
-    display: flex;
+    display: block;
+
+    @media(min-width: 860px) {
+      display: flex;
+    }
   }
 
   i {
