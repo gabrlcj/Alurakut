@@ -56,19 +56,8 @@
 
 | <a href="https://github.com/omariosouto">Mario Souto</a>  | <a href="https://github.com/peas">Paulo Silveira</a> | <a href="https://github.com/juunegreiros">Juliana Negreiros</a> |
 | --------------------------------------------------------- | ---------------------------------------------------- | --------------------------------------------------------------- |
-| <img src="https://unavatar.now.sh/github/omariosouto" width="220" /> | <img src="https://unavatar.now.sh/github/peas" width="220" /> | <img src="https://unavatar.now.sh/github/juunegreiros" width="220" /> |
+| <img src="https://unavatar.now.sh/github/omariosouto" width="230" /> | <img src="https://unavatar.now.sh/github/peas" width="230" /> | <img src="https://unavatar.now.sh/github/juunegreiros" width="230" /> |
 
-
-<div align="center">
-  <img src="https://unavatar.now.sh/github/omariosouto" width="220" />
-  <img src="https://unavatar.now.sh/github/peas" width="220" />
-  <img src="https://unavatar.now.sh/github/juunegreiros" width="220" />
-  <div>
-    <a href="https://github.com/omariosouto">Mario Souto</a>
-    <a href="https://github.com/peas">Paulo Silveira</a>
-    <a href="https://github.com/juunegreiros">Juliana Negreiros</a>
-  </div>
-</div>
 
 # Autor
 
