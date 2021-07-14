@@ -1,7 +1,5 @@
 <div align="center">
   <img src=".github/img/Alurakut.png" />
-  <br>
-  <h3>Projeto realizado na imersão React da <a href="https://www.alura.com.br/" target="_blank">Alura</a>.</h3>
 </div>
 
 ---
@@ -18,8 +16,9 @@
 
 <br>
 
-<div align="center">
-  <img src=".github/img/Imersao-react.png" width="125" />
+<div align="left">
+  <img src=".github/img/Imersao-react.png" width="100" />
+  <h4 align="right">Projeto realizado na imersão React da <a href="https://www.alura.com.br/" target="_blank">Alura</a>.</h4>
 </div>
 
 
@@ -32,7 +31,7 @@
 # Imagens
 
 <div align="center">
-  <h4>Página de Login(ainda em contrução):</h4>
+  <h4>Página de Login (ainda em contrução):</h4>
   <img src=".github/img/tela-de-login.png" />
   <h4>Menu mobile da Home:</h4>
   <img src=".github/img/mobile-home.png" />
@@ -51,7 +50,7 @@
  - [Yarn](https://yarnpkg.com/)
 
 
-# Instrutores:
+# Instrutores
 **Aqui um agradecimento pelos instrutores dessa imersão incrivel que a Alura sempre proporciona!!!**
 
 | <a href="https://github.com/omariosouto">Mario Souto</a>  | <a href="https://github.com/peas">Paulo Silveira</a> | <a href="https://github.com/juunegreiros">Juliana Negreiros</a> |
