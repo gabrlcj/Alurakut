@@ -1,9 +1,10 @@
 <div align="center">
   <img src=".github/img/Alurakut.png" />
-  <br>
+</div>
 
-  [![Alurakut - loading...](https://img.shields.io/static/v1?label=Alurakut&message=loading...&color=pink&logo=github)](https://github.com/Alurakut/loading...)
-  [![stars - Alurakut](https://img.shields.io/github/stars/gabrlcj/Alurakut?style=social)](https://github.com/gabrlcj/Alurakut)
+<div align="center">
+  <a href="https://github.com/Alurakut/loading..."><img src="https://img.shields.io/static/v1?label=Alurakut&message=loading...&color=pink&logo=github" alt="Alurakut - loading..."></a>
+  <a href="https://github.com/gabrlcj/Alurakut"><img src="https://img.shields.io/github/stars/gabrlcj/Alurakut?style=social" alt="stars - Alurakut"></a>
 </div>
 
 ---
