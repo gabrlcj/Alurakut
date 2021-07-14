@@ -12,6 +12,7 @@
     <a href="#imagens">Imagens</a> |
     <a href="#tecnologias">Tecnologias</a> |
     <a href="#licença">Licença</a> |
+    <a href="#instrutores">Instrutores</a> |
     <a href="#autor">Autor</a>
   </b>
 </div>
@@ -32,9 +33,9 @@
 # Imagens
 
 <div align="center">
-  <h5>Página de Login(ainda em contrução):</h5>
+  <h4>Página de Login(ainda em contrução):</h4>
   <img src=".github/img/tela-de-login.png" />
-  <h5>Menu mobile da Home:</h5>
+  <h4>Menu mobile da Home:</h4>
   <img src=".github/img/mobile-home.png" />
 </div>
 
@@ -62,13 +63,13 @@
 **Aqui um agradecimento pelos instrutores dessa imersão incrivel que a Alura sempre proporciona!!!**
 
 <div align="center">
-  <img src="https://unavatar.now.sh/github/omariosouto" width="200" />
-  <img src="https://unavatar.now.sh/github/peas" width="200" />
-  <img src="https://unavatar.now.sh/github/juunegreiros" width="200" />
+  <img src="https://unavatar.now.sh/github/omariosouto" width="220" />
+  <img src="https://unavatar.now.sh/github/peas" width="220" />
+  <img src="https://unavatar.now.sh/github/juunegreiros" width="220" />
   <div>
-    <a style="margin-right: 25;" href="https://github.com/omariosouto">Mario Souto</a>
-    <a style="margin: 0 25;" href="https://github.com/peas">Paulo Silveira</a>
-    <a style="margin-left: 25;" href="https://github.com/juunegreiros">Juliana Negreiros</a>
+    <a align="left" href="https://github.com/omariosouto">Mario Souto</a>
+    <a href="https://github.com/peas">Paulo Silveira</a>
+    <a align="right" href="https://github.com/juunegreiros">Juliana Negreiros</a>
   </div>
 </div>
 
