@@ -4,6 +4,8 @@
   <h3>Projeto realizado na imersão React da <a href="https://www.alura.com.br/" target="_blank">Alura</a>.</h3>
 </div>
 
+---
+
 <div align="center">
   <b>
     <a href="#sobre">Sobre</a> |
@@ -21,13 +23,13 @@
 </div>
 
 
-## Sobre
+# Sobre
 **Nesta imersão da [Alura](https://github.com/alura-challenges) nós revivemos o nossa querida rede social Orkut, ou quase isso hahaha, com algumas mudanças utilizamos das novas tecnologias para recriar a interface dele.**
 
 **Dentro de 5 dias com utilização de React.js e Next.js nosso objetivo é transformar ela em uma aplicação focada em *SPA* ou *Single Page Application*.**
 
 
-## Imagens
+# Imagens
 
 <div align="center">
   <h5>Página de Login(ainda em contrução):</h5>
@@ -37,7 +39,7 @@
 </div>
 
 
-## Tecnologias
+# Tecnologias
 ### *Linguagens:*
  - JavaScript
   
@@ -50,27 +52,27 @@
 
 ---
 
-## Licença
+# Licença
 
 
 
 ---
 
-### Instrutores:
+# Instrutores:
 **Aqui um agradecimento pelos instrutores dessa imersão incrivel que a Alura sempre proporciona!!!**
 
 <div align="center">
-  <img src="https://unavatar.now.sh/github/omariosouto" width="275" />
-  <img src="https://unavatar.now.sh/github/peas" width="275" />
-  <img src="https://unavatar.now.sh/github/juunegreiros" width="275" />
+  <img src="https://unavatar.now.sh/github/omariosouto" width="200" />
+  <img src="https://unavatar.now.sh/github/peas" width="200" />
+  <img src="https://unavatar.now.sh/github/juunegreiros" width="200" />
   <div>
-    <a href="https://github.com/omariosouto">Mario Souto</a>
-    <a href="https://github.com/peas">Paulo Silveira</a>
-    <a href="https://github.com/juunegreiros">Juliana Negreiros</a>
+    <a style="margin-right: 25;" href="https://github.com/omariosouto">Mario Souto</a>
+    <a style="margin: 0 25;" href="https://github.com/peas">Paulo Silveira</a>
+    <a style="margin-left: 25;" href="https://github.com/juunegreiros">Juliana Negreiros</a>
   </div>
 </div>
 
-## Autor
+# Autor
 
 <img src="https://unavatar.now.sh/github/gabrlcj" width="275" />
 
