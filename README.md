@@ -2,11 +2,10 @@
   <img src=".github/img/Alurakut.png" />
   <br>
   <h4>Projeto realizado na imersão React da <a href="https://www.alura.com.br/" target="_blank">Alura</a>.</h4>
-  <br>
   <h2><a href="https://alurakut-gabrlcj.vercel.app/" target="_blank">Site da aplicação</a></h2>
 </div>
 
----
+
 
 <div align="center">
   <b>
@@ -18,9 +17,11 @@
   </b>
 </div>
 
-<img align="center" src=".github/img/Imersao-react.png" width="155" />
+<div align="center">
+  <img src=".github/img/Imersao-react.png" width="125" />
+</div>
 
----
+
 
 ## Sobre
 **Nesta imersão da [Alura](https://github.com/alura-challenges) nós revivemos o nossa querida rede social Orkut, ou quase isso hahaha, com algumas mudanças utilizamos das novas tecnologias para recriar a interface dele.**
@@ -38,47 +39,50 @@
   <img src=".github/img/mobile-home.png" />
 </div>
 
----
+
 
 ## Tecnologias
 ### *Linguagens:*
  - JavaScript
   
-#### *Bibliotecas / Frameworks:*
+### *Bibliotecas / Frameworks:*
   - [Next.js](https://nextjs.org/)
   - [React.js](https://pt-br.reactjs.org/)
 
-#### *Utilitarios:*
+### *Utilitarios:*
  - [Yarn](https://yarnpkg.com/)
 
-
+---
 
 ## Licença
 
 
 
-
+---
 
 ### Instrutores:
 **Aqui um agradecimento pelos instrutores dessa imersão incrivel que a Alura sempre proporciona!!!**
 
-<img src="https://unavatar.now.sh/github/omariosouto" />
+<div align="center">
+  <img src="https://unavatar.now.sh/github/omariosouto" width="275" />
 
- - [MarioSouto](https://github.com/omariosouto)
+  - [MarioSouto](https://github.com/omariosouto)
 
-<img src="https://unavatar.now.sh/github/peas" />
+  <img src="https://unavatar.now.sh/github/peas" width="275" />
 
- - [PauloSilveira](https://github.com/peas)
+  - [PauloSilveira](https://github.com/peas)
 
-<img src="https://unavatar.now.sh/github/juunegreiros" />
+  <img src="https://unavatar.now.sh/github/juunegreiros" width="275" />
 
- - [JulianaNegreiros](https://github.com/juunegreiros)
-
+  - [JulianaNegreiros](https://github.com/juunegreiros)
+</div>
 
 ## Autor
-<img style='border-radius: 50px;' width='170px' src="https://unavatar.now.sh/github/gabrlcj">
-<p><b>Gabriel Bittencourt Penteado 🔰</b></p>
 
-Feito com 🤎 por Gabriel B. Penteado. Entre em contato! 👋🏽
+<img src="https://unavatar.now.sh/github/gabrlcj" width="275" />
+
+## Gabriel Bittencourt Penteado 🔰
+
+#### Feito com 🤎 por Gabriel B. Penteado. Entre em contato! 👋🏽
 
 [![Linkedin Badge](https://img.shields.io/badge/-Gabriel-orange?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/gabriel-bittencourt-penteado/)](https://www.linkedin.com/in/gabriel-bittencourt-penteado/)
