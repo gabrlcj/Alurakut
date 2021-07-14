@@ -17,8 +17,7 @@
 <br>
 
 <div align="left">
-  <img src=".github/img/Imersao-react.png" width="100" />
-  <h4 align="right">Projeto realizado na imersão React da <a href="https://www.alura.com.br/" target="_blank">Alura</a>.</h4>
+  <h4><img src=".github/img/Imersao-react.png" width="100" /> Projeto realizado na imersão React da <a href="https://www.alura.com.br/" target="_blank">Alura</a>.</h4>
 </div>
 
 
