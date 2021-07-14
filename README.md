@@ -4,6 +4,7 @@
 
 ---
 
+<h5 align="center">Aplicação com foco em recriar o Orkut.</h5>
 <div align="center">
   <b>
     <a href="#sobre">Sobre</a> |
@@ -16,8 +17,8 @@
 
 <br>
 
-<div align="left">
-  <h4><img src=".github/img/Imersao-react.png" width="100" /> Projeto realizado na imersão React da <a href="https://www.alura.com.br/" target="_blank">Alura</a>.</h4>
+<div align="center">
+  <img src=".github/img/Imersao-react.png" width="80" />
 </div>
 
 
