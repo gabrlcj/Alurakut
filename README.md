@@ -1,7 +1,7 @@
 <div align="center">
   <img src=".github/img/Alurakut.png" />
   <br>
-  <h4>Projeto realizado na imersão React da <a href="https://www.alura.com.br/" target="_blank">Alura</a>.</h4>
+  <h3>Projeto realizado na imersão React da <a href="https://www.alura.com.br/" target="_blank">Alura</a>.</h3>
 </div>
 
 <div align="center">
@@ -14,7 +14,7 @@
   </b>
 </div>
 
-<br><br>
+<br>
 
 <div align="center">
   <img src=".github/img/Imersao-react.png" width="125" />
@@ -61,11 +61,13 @@
 
 <div align="center">
   <img src="https://unavatar.now.sh/github/omariosouto" width="275" />
-  <a href="https://github.com/omariosouto">Mario Souto</a>
   <img src="https://unavatar.now.sh/github/peas" width="275" />
-  <a href="https://github.com/peas">Paulo Silveira</a>
   <img src="https://unavatar.now.sh/github/juunegreiros" width="275" />
-  <a href="https://github.com/juunegreiros">Juliana Negreiros</a>
+  <div>
+    <a href="https://github.com/omariosouto">Mario Souto</a>
+    <a href="https://github.com/peas">Paulo Silveira</a>
+    <a href="https://github.com/juunegreiros">Juliana Negreiros</a>
+  </div>
 </div>
 
 ## Autor
