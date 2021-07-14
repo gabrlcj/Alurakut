@@ -6,12 +6,14 @@
 
 <div align="center">
   <a href="https://github.com/Alurakut/loading..."><img src="https://img.shields.io/static/v1?label=Alurakut&message=loading...&color=pink&logo=github" alt="Alurakut - loading..."></a>
+  <a href="https://www.javascript.com/"><img src="https://img.shields.io/badge/Made_with-JavaScript-pink?logo=javascript&logoColor=yellow" alt="Made with JavaScript"></a>
+  <a href="https://www.npmjs.com/package/react"><img src="https://img.shields.io/badge/React-17-pink?logo=react&logoColor=blue" alt="Made with React"></a>
   <a href="https://github.com/gabrlcj/Alurakut"><img src="https://img.shields.io/github/stars/gabrlcj/Alurakut?style=social" alt="stars - Alurakut"></a>
 </div>
 
 ---
 
-<h3 align="center">Aplicação com foco em recriar o Orkut.</h3>
+<h3 align="center">Aplicação com foco em recriar rede social, Orkut, durante a imersão React.</h3>
 <div align="center">
   <b>
     <a href="#sobre">Sobre</a> |
