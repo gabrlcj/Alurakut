@@ -81,13 +81,16 @@ export default function Home() {
             </h2>
             <form onSubmit={handleCreateCommunity}>
               <div>
+                <i>Nome comunidade:</i>
                 <input 
                   placeholder="Qual vai ser o nome da sua comunidade?" 
                   name="title" 
                   aria-label="Qual vai ser o nome da sua comunidade?"
                   type="text"
+                  required
                 />
               </div>
+              <i>Capa da comunidade:</i>
               <div className="inputURL">
                 <input
                   placeholder="URL para usar de capa" 
@@ -103,11 +106,13 @@ export default function Home() {
                 />
               </div>
               <div>
+              <i>Link da comunidade:</i>
                 <input 
                   placeholder="Coloque uma URL para o site da comunidade" 
                   name="link" 
                   aria-label="Coloque uma URL para o site da comunidade"
                   type="url"
+                  required
                 />
               </div>
               <button className="btn-grad">

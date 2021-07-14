@@ -127,7 +127,7 @@ AlurakutMenu.Wrapper = styled.header`
         padding: 10px 16px;
         position: relative;
         text-decoration: none;
-        margin-left: 10px;
+        margin-left: 5px;
         &:after {
           content: " • ";
           background: #121212;
@@ -139,6 +139,7 @@ AlurakutMenu.Wrapper = styled.header`
           left: 0;
           top: 0;
           bottom: 0;
+          margin-left: 5px;
         }
       }
     }
@@ -225,16 +226,16 @@ export function AlurakutProfileSidebarMenuDefault() {
 }
 AlurakutProfileSidebarMenuDefault.Wrapper = styled.div`
   a {
-    font-size: 12px;
+    font-size: 14px;
     color: #121212;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    text-decoration: none;
+    text-decoration: underline;
     img {
-      width: 16px;
-      height: 16px;
+      width: 18px;
+      height: 18px;
       margin-right: 5px; 
     }
   }

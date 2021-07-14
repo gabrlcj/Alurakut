@@ -9,7 +9,8 @@ const GlobalStyle = createGlobalStyle`
   }
   
   body {
-    background-image: radial-gradient( circle farthest-corner at -8.9% 51.2%,  rgba(255,124,0,1) 0%, rgba(255,124,0,1) 15.9%, rgba(255,163,77,1) 15.9%, rgba(255,163,77,1) 24.4%, rgba(19,30,37,1) 24.5%, rgba(19,30,37,1) 66% );    
+    background-image: url('https://images.hdqwalls.com/wallpapers/demon-slayer-minimal-4k-zh.jpg');
+    background-size: cover;
     font-family: sans-serif;
   }
 
@@ -28,6 +29,11 @@ const GlobalStyle = createGlobalStyle`
 
   .inputURL {
     display: flex;
+  }
+
+  i {
+    font-size: 12px;
+    margin-left: 10px;
   }
 
   ${AlurakutStyles}

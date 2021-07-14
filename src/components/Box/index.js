@@ -10,7 +10,7 @@ const Box = styled.div`
 
   /* CSS Pré-Pronto */ 
   .boxLink {
-    font-size: 14px;
+    font-size: 14.1px;
     color: #121212;
     text-decoration: none;
     font-weight: 700;
@@ -41,15 +41,18 @@ const Box = styled.div`
   }
   input {
     width: 100%;
-    background-color: #F4F4F4;
+    background-color: rgba(160,199,254, .7);
     color: #333333;
-    border: 0;
+    border: 1px solid rgba(0,0,0,.3);
     padding: 14px 16px;
     margin-bottom: 14px;
     border-radius: 10000px;
     ::placeholder {
       color: #333333;
       opacity: 1;
+    }
+    :focus {
+      background: rgba(255,255,249,.7);
     }
   }
   button {
