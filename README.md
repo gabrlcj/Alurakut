@@ -2,6 +2,8 @@
   <img src=".github/img/Alurakut.png" />
 </div>
 
+<br>
+
 <div align="center">
   <a href="https://github.com/Alurakut/loading..."><img src="https://img.shields.io/static/v1?label=Alurakut&message=loading...&color=pink&logo=github" alt="Alurakut - loading..."></a>
   <a href="https://github.com/gabrlcj/Alurakut"><img src="https://img.shields.io/github/stars/gabrlcj/Alurakut?style=social" alt="stars - Alurakut"></a>
