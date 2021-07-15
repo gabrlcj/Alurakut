@@ -14,49 +14,36 @@ import { InspirationBox } from '../src/components/InspirationBox'
 
 export default function Home() {
   const [username, setUsername] = useState([])
+  const [community, setCommunity] = useState([])
 
   useEffect(() => {
-    GitHubService.getUsername().then((userName) => setUsername(userName))
-  }, [])
+    GitHubService.getUsername().then(userName => setUsername(userName))
 
-  const [community, setCommunity] = useState([
-    {
-      id: '1213123141514345',
-      title: 'Eu odeio acordade cedo',
-      image: 'https://alurakut.vercel.app/capa-comunidade-01.jpg',
-      link: 'https://www.orkut.br.com/MainCommunity?cmm=10000'
-    },
-    {
-      id: '0912803912830918',
-      title: 'Alura Stars',
-      image: 'https://www.alura.com.br/assets/img/stars/logoIlustra.1622650220.svg',
-      link: 'https://www.alura.com.br/stars'
-    },
-    {
-      id: '123984673902314',
-      title: 'NBA',
-      image: 'https://a4.espncdn.com/combiner/i?img=%2Fi%2Fespn%2Fmisc_logos%2F500%2Fnba.png',
-      link: 'https://www.nba.com/'
-    },
-    {
-      id: '1231415757587689879',
-      title: 'Pérolas da NBA',
-      image: 'https://pbs.twimg.com/profile_images/1351954925086007301/6HKat4eQ_400x400.jpg',
-      link: 'https://twitter.com/PerolasdaNBA'
-    },
-    {
-      id: '12398467390456535',
-      title: 'DEV Community',
-      image: 'https://thepracticaldev.s3.amazonaws.com/i/6hqmcjaxbgbon8ydw93z.png',
-      link: 'https://dev.to/'
-    },
-    {
-      id: '12392342353902314',
-      title: 'JuiceWRLD',
-      image: 'https://yt3.ggpht.com/ytc/AKedOLRZ-uACtA-fJfstOtbfwqpFCELcE9f9JShyo5Y_hA=s88-c-k-c0x00ffffff-no-rj',
-      link: 'https://www.youtube.com/channel/UC0BletW9phE4xHFM44q4qKA'
-    }
-  ])
+    // Fetch GraphQL API
+    fetch('https://graphql.datocms.com/', {
+      method: "POST",
+      headers: {
+        'Authorization': 'fe7096184b60a969052a46234b15b4',
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+      },
+      body: JSON.stringify({ "query": `query { 
+        allCommunities { 
+          id 
+          title 
+          imageUrl
+          linkCommunity 
+          creatorSlug
+        } 
+      }` })
+    })
+    .then(response => response.json())
+    .then(fullresponse => {
+      const communityData = fullresponse.data.allCommunities
+      setCommunity(communityData)
+    })
+
+  }, [])
 
   const handleCreateCommunity = (e) => {
     e.preventDefault()
@@ -64,14 +51,25 @@ export default function Home() {
     const dataForm = new FormData(e.target)
 
     const comunidade = {
-      id: new Date().toISOString(),
       title: dataForm.get('title'),
-      image: dataForm.get('image'),
-      link: dataForm.get('link')
+      imageUrl: dataForm.get('image'),
+      linkCommunity: dataForm.get('link'),
+      creatorSlug: dataForm.get('creator')
     }
 
-    const communitysUpdate = [...community, comunidade]
-    setCommunity(communitysUpdate)
+    fetch('/api/communities', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(comunidade)
+    })
+    .then(async(response) => {
+      const dados = await response.json()
+      const comunidade = dados.registro
+      const communitysUpdate = [...community, comunidade]
+      setCommunity(communitysUpdate)
+    })
   }
 
   return (
@@ -127,6 +125,16 @@ export default function Home() {
                   required
                 />
               </div>
+              <div>
+              <i>Criador da comunidade:</i>
+                <input 
+                  placeholder="Nome do criador da comunidade" 
+                  name="creator" 
+                  aria-label="Nome do criador da comunidade"
+                  type="text"
+                  required
+                />
+              </div>
               <button className="btn-grad">
                 Criar Comunidade
               </button>
@@ -143,8 +151,8 @@ export default function Home() {
             {community.map((item) => {
               return (
                 <li key={item.id}>
-                  <a href={item.link} target="_blank">
-                    <img src={item.image} />
+                  <a href={`/communities/${item.linkCommunity}`} target="_blank">
+                    <img src={item.imageUrl} />
                     <span>{item.title}</span>
                   </a>
                 </li>
