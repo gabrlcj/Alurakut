@@ -13,7 +13,7 @@
 
 ---
 
-<h3 align="center">Aplicação com foco em recriar uma das rede social mais nostalgica que tivemos no passado.</h3>
+<h3 align="center">Aplicação com foco em recriar uma das mais nostalgicas rede social que tivemos no passado.</h3>
 <div align="center">
   <b>
     <a href="#sobre">Sobre</a> |
