@@ -34,7 +34,7 @@
 # Sobre
 **Nesta imersão da [Alura](https://github.com/alura-challenges) nós revivemos a nossa querida rede social Orkut, ou quase isso hahaha, com algumas mudanças e implementações, cada um deixou a rede com a sua cara, assim utilizamos das novas tecnologias para recriar a interface dele.**
 
-**Dentro de 5 dias com utilização de React.js e Next.js nosso objetivo é transformar ela em uma aplicação focada em *SPA* ou *Single Page Application*.**
+**Dentro de 5 dias com utilização de React.js e Next.js nosso objetivo é transformar ela em uma aplicação composta por uma *Homepage* e *Login page*. [Link para o site](https://alurakut-gabrlcj.vercel.app/)**
 
 
 # Imagens
