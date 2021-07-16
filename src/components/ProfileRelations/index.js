@@ -7,7 +7,7 @@ export const ProfileRelationsBoxWrapper = styled(Box)`
   }
   div {
     box-shadow: 3px 3px 6px 1px #121212;
-    background-image: radial-gradient( circle 592px at 48.2% 50%,  rgba(255,255,249,0.7) 0%, rgba(160,199,254,1) 74.6% );
+    background-image: radial-gradient( circle 592px at 48.2% 50%,  rgba(255,255,249,.7) 0%, rgba(160,199,254,1) 74.6% );
   }
   ul {
     display: grid;

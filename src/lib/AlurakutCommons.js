@@ -57,7 +57,7 @@ AlurakutMenu.Wrapper = styled.header`
   background: #12121299;
   box-shadow: 3px 3px 6px 1px #121212;
   .alurakutMenuProfileSidebar {
-    background-image: radial-gradient( circle 592px at 48.2% 50%,  rgba(255,255,249,.9) 0%, rgba(160,199,254,1) 74.6% );
+    background-image: radial-gradient( circle 592px at 48.2% 50%,  rgba(255,255,249,.7) 0%, rgba(255, 153, 153,1) 74.6% );
     font-family: sans-serif;
     position: fixed;
     z-index: 100;
@@ -129,7 +129,7 @@ AlurakutMenu.Wrapper = styled.header`
         margin-left: 5px;
         &:after {
           content: " • ";
-          background: #121212;
+          background: #12121210;
           display: block;
           position: absolute;
           width: 1px;
@@ -160,7 +160,7 @@ AlurakutMenu.Wrapper = styled.header`
   }
 `;
 AlurakutMenu.Logo = styled.img`
-  background: #C1D5DC;
+  background: radial-gradient( circle 592px at 48.2% 50%,  rgba(255,255,249,.7) 0%, rgba(255, 153, 153,1) 74.6% );
   padding: 9px 14px;
   border-radius: 1000px;
   height: 34px;

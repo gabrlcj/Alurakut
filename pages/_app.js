@@ -9,8 +9,9 @@ const GlobalStyle = createGlobalStyle`
   }
   
   body {
-    background-image: url('https://images.hdqwalls.com/wallpapers/demon-slayer-minimal-4k-zh.jpg');
-    background-size: cover;
+    background-image: url('https://i.pinimg.com/originals/b6/48/4c/b6484ca31c5e40a76702b191ecea2548.gif');
+    /* background-image: url('https://images.hdqwalls.com/wallpapers/demon-slayer-minimal-4k-zh.jpg'); */
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     font-family: sans-serif;
   }
