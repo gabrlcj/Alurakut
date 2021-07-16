@@ -44,6 +44,8 @@
   <img src=".github/img/tela-de-login.png" />
   <h4>Menu mobile da Home:</h4>
   <img src=".github/img/mobile-home.png" />
+  <h4>HomePage da aplicação:</h4>
+  <img src=".github/img/print-homepage-desktop.png" />
 </div>
 
 
@@ -57,6 +59,8 @@
 
 ### *Utilitarios:*
  - [Yarn](https://yarnpkg.com/)
+ - [DatoCMS](https://www.datocms.com/)
+ - [Vercel](https://vercel.com)
 
 
 # Instrutores
@@ -69,7 +73,7 @@
 
 # Autor
 
-<img src="https://unavatar.now.sh/github/gabrlcj" width="275" />
+<img src="https://unavatar.now.sh/github/gabrlcj" width="250" />
 
 ## Gabriel Bittencourt Penteado 🔰
 
