@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react'
-
 import GitHubService from '../../services/api'
 import Link from 'next/dist/client/link'
-
 import { OrkutNostalgicIconSet } from '../../lib/AlurakutCommons'
 import Box from '../Box'
 

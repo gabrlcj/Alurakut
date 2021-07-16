@@ -76,6 +76,12 @@ const GlobalStyle = createGlobalStyle`
     }
   }
 
+  .btns {
+    button {
+      margin: 0 2px;
+    }
+  }
+
   ${AlurakutStyles}
 `
 

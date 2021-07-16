@@ -7,6 +7,11 @@ const Footer = styled.footer`
   align-items: center;
   justify-content: center;
   gap: 5px;
+  font-size: 14px;
+
+  @media(min-width: 860px) {
+    font-size: 16px;
+  }
 
   a {
     font-weight: 800;
@@ -20,7 +25,12 @@ export default function FooterPage() {
   return (
     <Box>
       <Footer>
-        Projeto desenvolvido na imersão React.js da <a href="https://www.alura.com.br/">Alura</a> - Desenvolvido com 🤎 por <a href="https://www.linkedin.com/in/gabrielbittencourtpenteado/">Gabriel Bittencourt</a>
+        <p>
+          Projeto desenvolvido na imersão React da <a href="https://www.alura.com.br/" target="_blank">Alura</a>
+        </p>| 
+        |<p>
+          Desenvolvido com 🤎 por <a href="https://www.linkedin.com/in/gabrielbittencourtpenteado/" target="_blank">Gabriel Bittencourt</a>
+        </p>
       </Footer>
     </Box>
   )

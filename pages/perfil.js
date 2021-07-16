@@ -1,7 +1,5 @@
 import { useState, useEffect } from 'react'
-
 import GitHubService from '../src/services/api'
-
 import { AlurakutMenu } from '../src/lib/AlurakutCommons'
 import FriendsList from '../src/components/FriendsList'
 import MainGrid from '../src/components/MainGrid'

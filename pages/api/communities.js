@@ -9,10 +9,6 @@ export default async function dataFromCommunities(request, response) {
     const record = await client.items.create({
       itemType: '971871',
       ...request.body,
-      // title: 'Comunidade de Teste',
-      // imageUrl: 'https://source.unsplash.com/random/300x300',
-      // linkCommunity: 'https://github.com/gabrlcj',
-      // creatorSlug: 'gabrlcj'
     })
   
     response.json({

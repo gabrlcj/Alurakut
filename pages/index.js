@@ -1,9 +1,6 @@
 import { useState, useEffect } from 'react'
-
 import GitHubService from '../src/services/api'
-
 import { AlurakutMenu, OrkutNostalgicIconSet } from '../src/lib/AlurakutCommons'
-
 import FriendsList from '../src/components/FriendsList'
 import MainGrid from '../src/components/MainGrid'
 import Box from '../src/components/Box'
@@ -45,6 +42,7 @@ export default function Home() {
 
   }, [])
 
+  // Testar o export nesta const para chamar em outro componente
   const handleCreateCommunity = (e) => {
     e.preventDefault()
 
@@ -85,13 +83,20 @@ export default function Home() {
               Bem-vindo(a), {username.login}
             </h1>
             <hr />
-            <OrkutNostalgicIconSet videos="3" mensagens="999" sexy="1" confiavel="2" />
+            <OrkutNostalgicIconSet videos="3" mensagens="999" sexy="2" confiavel="2" />
             <hr />
           </Box>
           <Box>
             <h2 className="subTitle">
               O que você deseja fazer?
             </h2>
+            <div className="btns">
+              <button>Adicionar Comunidade</button>
+              <button>Fazer um post</button>
+              <button>Adicionar Inspiração</button>
+            </div>
+          </Box>
+          <Box>
             <form onSubmit={handleCreateCommunity}>
               <div>
                 <i>Nome da comunidade:</i>

@@ -35,7 +35,7 @@ export function AlurakutMenu({ userName }) {
         </nav>
 
         <nav>
-          <a href={`/logout`}>
+          <a href={`/login`}>
             Sair
           </a>
           <div>
@@ -192,7 +192,7 @@ export function AlurakutProfileSidebarMenuDefault() {
   return (
     <AlurakutProfileSidebarMenuDefault.Wrapper>
       <nav>
-        <a href="/">
+        <a className="homepage" href="/">
             HomePage
         </a>
         <a href="/perfil">
@@ -239,6 +239,12 @@ AlurakutProfileSidebarMenuDefault.Wrapper = styled.div`
       width: 18px;
       height: 18px;
       margin-right: 5px; 
+    }
+  }
+
+  .homepage {
+    @media(min-width: 860px) {
+      display: none;
     }
   }
 `;
