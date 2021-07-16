@@ -10,7 +10,7 @@ import Box from '../src/components/Box'
 import ProfileSideBar from '../src/components/ProfileSideBar'
 import { Title, ProfileRelationsBoxWrapper } from '../src/components/ProfileRelations'
 import { InspirationBox } from '../src/components/InspirationBox'
-
+import FooterPage from '../src/components/Footer'
 
 export default function Home() {
   const [username, setUsername] = useState([])
@@ -84,7 +84,9 @@ export default function Home() {
             <h1 className="title">
               Bem-vindo(a), {username.login}
             </h1>
+            <hr />
             <OrkutNostalgicIconSet videos="3" mensagens="999" sexy="1" confiavel="2" />
+            <hr />
           </Box>
           <Box>
             <h2 className="subTitle">
@@ -165,6 +167,7 @@ export default function Home() {
           </ProfileRelationsBoxWrapper>
         </div>
       </MainGrid>
+      <FooterPage />
     </>
   )
 }

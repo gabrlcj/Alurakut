@@ -61,9 +61,9 @@ const Box = styled.div`
     color: #FFFFFF;
     border-radius: 10000px;
     background-color: #6F92BB;
-  }          
+  }               
   .btn-grad {
-    background-image: linear-gradient(to right, #457fca 0%, #5691c8  51%, #457fca  100%);
+    background-image: linear-gradient(to right, #232526 0%, #414345  51%, #232526  100%);
     margin: 10px 0 10px 0;
     padding: 15px 25px;
     text-align: center;

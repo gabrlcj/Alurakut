@@ -57,7 +57,7 @@ AlurakutMenu.Wrapper = styled.header`
   background: #12121299;
   box-shadow: 3px 3px 6px 1px #121212;
   .alurakutMenuProfileSidebar {
-    background-image: radial-gradient( circle 592px at 48.2% 50%,  rgba(255,255,249,.7) 0%, rgba(255, 153, 153,1) 74.6% );
+    background-image: radial-gradient( circle 592px at 48.2% 50%,  rgba(255,255,249,1) 0%, rgba(160,199,254,1) 74.6% );
     font-family: sans-serif;
     position: fixed;
     z-index: 100;
@@ -95,7 +95,7 @@ AlurakutMenu.Wrapper = styled.header`
     }
   }
   .container {
-    background: #12121210;
+    background: #12121201;
     padding: 7px 16px;
     max-width: 1110px;
     margin: auto;
@@ -160,7 +160,7 @@ AlurakutMenu.Wrapper = styled.header`
   }
 `;
 AlurakutMenu.Logo = styled.img`
-  background: radial-gradient( circle 592px at 48.2% 50%,  rgba(255,255,249,.7) 0%, rgba(255, 153, 153,1) 74.6% );
+  background: #121212;
   padding: 9px 14px;
   border-radius: 1000px;
   height: 34px;
@@ -193,21 +193,24 @@ export function AlurakutProfileSidebarMenuDefault() {
     <AlurakutProfileSidebarMenuDefault.Wrapper>
       <nav>
         <a href="/">
+            HomePage
+        </a>
+        <a href="/perfil">
           <img src={`${BASE_URL}/icons/user.svg`} />
             Perfil
-          </a>
+        </a>
         <a href="/">
           <img src={`${BASE_URL}/icons/book.svg`} />
             Recados
-          </a>
+        </a>
         <a href="/">
           <img src={`${BASE_URL}/icons/camera.svg`} />
             Fotos
-          </a>
+        </a>
         <a href="/">
           <img src={`${BASE_URL}/icons/sun.svg`} />
             Depoimentos
-          </a>
+        </a>
       </nav>
       <hr />
       <nav>

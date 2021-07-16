@@ -19,16 +19,17 @@ export default function ProfilePage() {
       <h1 className="title">
         Gabriel Bittencourt, @{username.login}
       </h1>
-      <p>
+      <p className="link-profile">
         <Link href="/"><a>Início</a></Link> {">"} Meu perfil
       </p>
       <hr />
-      <div>
+      <div className="profile-phrase">
         <h5>Frase do perfil:</h5>
         <i>"Os mais esforçados são os mais bem recompensados."</i>
       </div>
       <hr />
       <OrkutNostalgicIconSet videos="3" mensagens="999" sexy="1" confiavel="2" />
+      <hr />
     </Box>
   )
 }

@@ -42,6 +42,40 @@ const GlobalStyle = createGlobalStyle`
     margin-left: 10px;
   }
 
+  .profile-phrase {
+    border: 1px solid #12121250;
+    padding: 8px 14px;
+
+    i {
+      font-size: 13px;
+    }
+  }
+
+  .link-profile {
+    font-size: 14px;
+
+    a {
+      color: #39A2DB;
+    }
+  }
+
+  .btn-profile {
+    color: black;
+    padding: 6px 10px;
+    border-radius: 8px;
+    border: 2px solid rgba(160,199,254,1);
+    border-bottom: none;
+    background: rgba(160,199,254,.8);
+    margin-left: 8px;
+    margin-bottom: -3px;
+    text-decoration: underline;
+
+    :hover {
+      background: #A2DBFA;
+      opacity: 1;
+    }
+  }
+
   ${AlurakutStyles}
 `
 
