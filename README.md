@@ -40,7 +40,7 @@
 # Imagens
 
 <div align="center">
-  <h4>Página de Login (ainda em contrução):</h4>
+  <h4>Página de Login:</h4>
   <img src=".github/img/tela-de-login.png" />
   <h4>Menu mobile da Home:</h4>
   <img src=".github/img/mobile-home.png" />
