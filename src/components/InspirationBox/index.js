@@ -35,7 +35,7 @@ export const InspirationBox = () => {
     {
       id: '13242655787514345',
       title: 'Rocketseat',
-      image: 'https://yt3.ggpht.com/ytc/AKedOLQkXnYChXAHOeBQLzwhk1_BHYgUXs6ITQOakoeNoQ=s88-c-k-c0x00ffffff-no-rj',
+      image: 'https://pbs.twimg.com/profile_images/1291682473592659968/sEorc6oh_400x400.jpg',
       link: 'https://www.youtube.com/channel/UCSfwM5u0Kce6Cce8_S72olg'
     }
   ]

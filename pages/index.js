@@ -80,7 +80,7 @@ export default function Home() {
         <div className="welcomeArea" style={{ gridArea: 'welcomeArea' }}>
           <Box>
             <h1 className="title">
-              Bem-vindo(a), {username.login}
+              Bem-vindo(a), Gabriel Bittencourt
             </h1>
             <hr />
             <OrkutNostalgicIconSet videos="3" mensagens="999" sexy="2" confiavel="2" />
@@ -93,11 +93,10 @@ export default function Home() {
             <div className="btns">
               <button>Adicionar Comunidade</button>
               <button>Fazer um post</button>
-              <button>Adicionar Inspiração</button>
             </div>
           </Box>
           <Box>
-            <form onSubmit={handleCreateCommunity}>
+            <form id="formCommunity" onSubmit={handleCreateCommunity}>
               <div>
                 <i>Nome da comunidade:</i>
                 <input 
