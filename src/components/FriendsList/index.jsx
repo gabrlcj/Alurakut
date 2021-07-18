@@ -15,7 +15,7 @@ export default function FriendsList({ amount, random }) {
     <>
       <Title title="Amigos(as)" items={friends} />
       <ul>
-        {friends.map((friends) => {
+        {friends.slice(0, 6).map((friends) => {
           return (
             <FriendsImage
               key={friends.login}
@@ -26,6 +26,11 @@ export default function FriendsList({ amount, random }) {
           )
         })}
       </ul>
+      <hr />
+      <p className="link-profile">
+        <a href="/amigos"><b>Ver todos</b></a>
+      </p>
+      <hr />
     </>
   )
 }

@@ -55,7 +55,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: 14px;
 
     a {
-      color: #39A2DB;
+      color: #04009A;
     }
   }
 

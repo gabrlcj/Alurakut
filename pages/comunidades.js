@@ -4,12 +4,11 @@ import { AlurakutMenu, OrkutNostalgicIconSet } from '../src/lib/AlurakutCommons'
 import MainGrid from '../src/components/MainGrid'
 import ProfileSideBar from '../src/components/ProfileSideBar'
 import GitHubService from '../src/services/api'
-import FriendsImage from '../src/components/FriendsImage'
+import { Title } from '../src/components/ProfileRelations'
 import styled from "styled-components"
 import Box from '../src/components/Box'
-import { Title } from '../src/components/ProfileRelations'
 
-export const MainGridFriends = styled(MainGrid)`
+export const MainGridCommunities = styled(MainGrid)`
   width: 100%;
   grid-gap: 10px;
   margin-left: auto;
@@ -33,7 +32,7 @@ export const MainGridFriends = styled(MainGrid)`
   }
 `
 
-export const ProfileRelationsBoxWrapperFriends = styled(Box)`
+export const ProfileRelationsBoxWrapperCommunity = styled(Box)`
   .smallTitle {
     color: #121212;
   }
@@ -90,21 +89,41 @@ export const ProfileRelationsBoxWrapperFriends = styled(Box)`
   }
 `
 
-export default function Amigos({ amount, random }) {
+export default function Amigos() {
   const [username, setUsername] = useState([])
-  const [friends, setFriends] = useState([])
+  const [community, setCommunity] = useState([])
 
   useEffect(() => {
     GitHubService.getUsername().then(userName => setUsername(userName))
 
-    GitHubService.getFollowers(amount, random)
-    .then((friendsList) => setFriends(friendsList))
+    fetch('https://graphql.datocms.com/', {
+      method: "POST",
+      headers: {
+        'Authorization': 'fe7096184b60a969052a46234b15b4',
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+      },
+      body: JSON.stringify({ "query": `query { 
+        allCommunities { 
+          id 
+          title 
+          imageUrl
+          linkCommunity 
+          creatorSlug
+        } 
+      }` })
+    })
+    .then(response => response.json())
+    .then(fullresponse => {
+      const communityData = fullresponse.data.allCommunities
+      setCommunity(communityData)
+    })
   }, [])
 
   return (
     <>
       <AlurakutMenu />
-      <MainGridFriends>
+      <MainGridCommunities>
         <div className="profileArea" style={{ gridArea: 'profileArea' }}>
           <ProfileSideBar username={username.login} />
         </div>
@@ -114,29 +133,29 @@ export default function Amigos({ amount, random }) {
               Gabriel Bittencourt (@{username.login})
             </h1>
             <p className="link-profile">
-              <Link href="/"><a>Início</a></Link> {">"} Meus Amigos
+              <Link href="/"><a>Início</a></Link> {">"} Minhas Comunidades
             </p>
             <hr />
             <OrkutNostalgicIconSet videos="3" mensagens="999" sexy="2" confiavel="2" />
             <hr />
           </Box>
-          <ProfileRelationsBoxWrapperFriends>
-            <Title title="Amigos(as)" items={friends} />
-            <ul>
-              {friends.map((friends) => {
-                return (
-                  <FriendsImage
-                    key={friends.login}
-                    html_url={friends.html_url}
-                    avatar_url={friends.avatar_url}
-                    login={friends.login}
-                  />
-                )
-              })}
-            </ul>
-          </ProfileRelationsBoxWrapperFriends>
+          <ProfileRelationsBoxWrapperCommunity>
+            <Title title="Comunidades" items={community} />
+              <ul>
+                {community.map((item) => {
+                  return (
+                    <li key={item.id}>
+                      <a href={`/communities/${item.linkCommunity}`} target="_blank">
+                        <img src={item.imageUrl} />
+                        <span>{item.title}</span>
+                      </a>
+                    </li>
+                  )
+                })}
+              </ul>
+          </ProfileRelationsBoxWrapperCommunity>
         </div>
-      </MainGridFriends>
+      </MainGridCommunities>
     </>
   )
 }

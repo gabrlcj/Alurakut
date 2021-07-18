@@ -9,6 +9,7 @@ import { Title, ProfileRelationsBoxWrapper } from '../src/components/ProfileRela
 import { InspirationBox } from '../src/components/InspirationBox'
 import FooterPage from '../src/components/Footer'
 
+
 export default function Home() {
   const [username, setUsername] = useState([])
   const [community, setCommunity] = useState([])
@@ -42,19 +43,18 @@ export default function Home() {
 
   }, [])
 
-  // Testar o export nesta const para chamar em outro componente
   const handleCreateCommunity = (e) => {
     e.preventDefault()
-
+  
     const dataForm = new FormData(e.target)
-
+  
     const comunidade = {
       title: dataForm.get('title'),
       imageUrl: dataForm.get('image'),
       linkCommunity: dataForm.get('link'),
       creatorSlug: dataForm.get('creator')
     }
-
+  
     fetch('/api/communities', {
       method: 'POST',
       headers: {
@@ -90,12 +90,6 @@ export default function Home() {
             <h2 className="subTitle">
               O que você deseja fazer?
             </h2>
-            <div className="btns">
-              <button>Adicionar Comunidade</button>
-              <button>Fazer um post</button>
-            </div>
-          </Box>
-          <Box>
             <form id="formCommunity" onSubmit={handleCreateCommunity}>
               <div>
                 <i>Nome da comunidade:</i>
@@ -145,27 +139,32 @@ export default function Home() {
                 Criar Comunidade
               </button>
             </form>
-          </Box>
+          </Box> 
         </div>
         <div className="profileRelationsArea" style={{ gridArea: 'profileRelationsArea' }}>
           <ProfileRelationsBoxWrapper>
             <FriendsList />
           </ProfileRelationsBoxWrapper>      
           <ProfileRelationsBoxWrapper>
-          <Title title="Comunidades" items={community} />
-          <ul>
-            {community.map((item) => {
-              return (
-                <li key={item.id}>
-                  <a href={`/communities/${item.linkCommunity}`} target="_blank">
-                    <img src={item.imageUrl} />
-                    <span>{item.title}</span>
-                  </a>
-                </li>
-              )
-            })}
-          </ul>
-          </ProfileRelationsBoxWrapper>      
+            <Title title="Comunidades" items={community} />
+            <ul>
+              {community.slice(0, 6).map((item) => {
+                return (
+                  <li key={item.id}>
+                    <a href={`/communities/${item.linkCommunity}`} target="_blank">
+                      <img src={item.imageUrl} />
+                      <span>{item.title}</span>
+                    </a>
+                  </li>
+                )
+              })}
+            </ul>
+            <hr />
+            <p className="link-profile">
+              <a href="/comunidades"><b>Ver todos</b></a>
+            </p>
+            <hr />
+          </ProfileRelationsBoxWrapper>   
           <ProfileRelationsBoxWrapper>
             <InspirationBox />
           </ProfileRelationsBoxWrapper>
