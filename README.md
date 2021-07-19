@@ -45,7 +45,7 @@
   <h4>Menu mobile da Home:</h4>
   <img src=".github/img/mobile-home.png" />
   <h4>HomePage da aplicação:</h4>
-  <img src=".github/img/print-homepage-desktop.png" />
+  <img src=".github/img/home-page.png" />
 </div>
 
 
